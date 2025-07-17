@@ -1,7 +1,7 @@
 
-# 🧠 NLP-Powered Customer Review Analysis System
+# 🧠 Review Dish: NLP-Powered Customer Review Analysis System
 
-A complete Natural Language Processing (NLP) pipeline to analyze large-scale customer reviews and social media comments. This capstone project extracts insights, classifies sentiment, identifies key topics and trends, and recommends business strategies through a rich set of visualizations and machine learning models.
+A complete Natural Language Processing (NLP) pipeline to analyze large-scale customer reviews and comments. This capstone project extracts insights, classifies sentiment, identifies key topics and trends, and recommends business strategies through a rich set of visualizations and machine learning models.
 
 ---
 
@@ -11,12 +11,9 @@ A complete Natural Language Processing (NLP) pipeline to analyze large-scale cus
 - [Objectives](#objectives)
 - [Tech Stack](#tech-stack)
 - [Project Pipeline](#project-pipeline)
-- [Installation](#installation)
 - [Dataset](#dataset)
 - [Screenshots](#screenshots)
-- [Results](#results)
 - [Future Work](#future-work)
-- [Contributors](#contributors)
 
 ---
 
@@ -44,12 +41,11 @@ This project leverages NLP techniques and machine learning models to analyze tex
 | Notebook           | Google Colab / Jupyter         |
 | NLP Libraries      | NLTK, spaCy, TextBlob, BERTopic|
 | Vectorization      | TF-IDF, Word2Vec, BERT         |
-| ML Models          | Logistic Regression, SVM, Naive Bayes, LSTM |
-| Topic Modeling     | LDA, BERTopic                  |
+| ML Models          | Logistic Regression, SVM, Naive Bayes |
+| Topic Modeling     | BERTopic                  |
 | Trend Analysis     | Pandas, Matplotlib, Seaborn    |
-| Dashboards         | Streamlit, Plotly              |
+| Dashboards         | Plotly              |
 | NER                | spaCy                          |
-| Reporting          | PDF (LaTeX/Markdown Export)    |
 
 ---
 
@@ -70,11 +66,11 @@ This project leverages NLP techniques and machine learning models to analyze tex
 ### ✅ 3. Sentiment Classification
 
 - Trained models: Logistic Regression, Naive Bayes, SVM  
-- Evaluated with Confusion Matrix, Precision, Recall, AUC
+- Evaluated with Confusion Matrix, Precision, Recall, F1-Score
 
 ### ✅ 4. Topic Modeling
 
-- LDA and BERTopic to extract major discussion points  
+- BERTopic to extract major discussion points  
 - Topics mapped to high/low ratings  
 
 ### ✅ 5. Trend Analysis
@@ -93,8 +89,7 @@ This project leverages NLP techniques and machine learning models to analyze tex
 
 ### ✅ 8. Reporting & Visualization
 
-- Built interactive dashboard using Streamlit + Plotly  
-- Exported final PDF/Word report with summaries and charts
+- Built interactive dashboard using Streamlit Plotly  
 
 ---
 
@@ -107,46 +102,40 @@ We used publicly available customer review datasets with:
 - `time` – UNIX timestamp  
 - `productId`, `userId`, etc. (optional)
 
-📥 **Dataset Link**: [Amazon Reviews (Kaggle)](https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products)
+📥 **Dataset Link**: [Amazon Fine Food Reviews (Kaggle)](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)
 
-💡 Used 10,000–50,000 samples for optimal performance.
+💡 Used 568,454 samples for optimal results.
 
 ---
 
 ## 📸 Screenshots
 
-> 📌 Paste your visuals here
+> 📌 visuals
 
 ### 🔹 Word Clouds
 
-![wordcloud-positive](screenshots/wordcloud_positive.png)
+![wordcloud-positive](images/p%20wc%20.png)
+![](images/n%20wc%20.png)
+![](images/ne%20wc%20.png)
 
 ### 🔹 Model Performance
 
-![confusion-matrix](screenshots/confusion_matrix.png)
+![](images/l%20reg.png)
+![](images/nb.png)
+![](images/svm.png)
 
 ### 🔹 Sentiment Over Time
 
-![sentiment-trend](screenshots/sentiment_trend.png)
+![sentiment-trend](images/S%20over%20time.png)
+![sentiment-trend](images/S%20share%20over%20time.png)
 
 ### 🔹 BERTopic Clusters
 
-![bertopic-viz](screenshots/bertopic_visualization.png)
+![bertopic-viz](images/Btopic%20distance%20map.png)
+![sentiment-trend](images/sentiment%20per%20topic.png)
 
 ---
 
-## 🧪 Results Summary
-
-| Model             | Accuracy | Precision | Recall | F1-Score |
-|------------------|----------|-----------|--------|----------|
-| Logistic Regression | 0.88     | 0.89      | 0.86   | 0.87     |
-| SVM              | 0.86     | 0.87      | 0.85   | 0.86     |
-| Naive Bayes      | 0.82     | 0.84      | 0.80   | 0.82     |
-
-- Top topics: "delivery delay", "great sound", "battery life", etc.
-- Sentiment spikes aligned with sales events & product launches
-
----
 
 ## 🔭 Future Work
 
@@ -157,26 +146,5 @@ We used publicly available customer review datasets with:
 
 ---
 
-## 👥 Contributors
 
-- Aman Kashyap – Developer, Analyst, Report Designer
 
----
-
-## 📄 License
-
-MIT License. Attribution appreciated.
-
----
-
-## 📝 Report
-
-📄 Final report PDF: [`Customer_Review_Analysis_Report.pdf`](final-report.pdf)
-
-📁 Includes:
-- Executive summary
-- Sentiment insights
-- Classifier results
-- Actionable recommendations
-
----
